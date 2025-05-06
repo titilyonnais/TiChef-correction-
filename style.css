@@ -267,7 +267,13 @@ les resolutions d'ecrans d'apres un petit script sass*/
     width: calc(100% - 0 * var(--gap) / 1);
   }
 
-
+  @media all and (max-width: 900px){
+    .medium-6 {
+      width: 50%;
+    }
+  }
+  
+  
 
 @media all and (max-width: 600px){
   .small-12 {
