@@ -1,6 +1,22 @@
 fetch('data.json')
     .then(response => response.json())
     .then(data => {
+        let donnee = document.getElementById("searchBar");
+
+        donnee.addEventListener("change", () => {
+            const input = donnee.value.toLowerCase();
+
+            data.forEach(mot => {
+                let chercher = mot.nom.toLowerCase().split(" ");
+
+                chercher.forEach(cher => {
+                    if (cher === input) {
+                        console.log("Trouvé :", mot.nom);
+                    }
+                });
+            });
+        });
+
         data.forEach(element => {
             let ingredientscui = '';
 
@@ -86,3 +102,10 @@ fetch('data.json')
 `
         });
     })
+
+fetch('article-data.json')
+    .then(response => response.json())
+    .then(articleData => {
+
+
+    });

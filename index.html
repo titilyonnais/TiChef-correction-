@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Tichef le livre de cuisine</title>
+    <title>Tichef - le livre de cuisine</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet">
     <link href="style.css" rel="stylesheet">
@@ -32,7 +32,46 @@
         </nav>
     </div>
 </header>
-<main id="recette-container"></main>
+<div class="flex justify-center align-center mt-16">
+    <input aria-label="search" id="searchBar" name="search" placeholder="Rechercher..." type="search">
+</div>
+<main id="recette-container">
+    <section class="container">
+        <div class="card">
+            <div>
+                <img alt="" src="assets/curry1.jpg">
+            </div>
+            <div>
+                <h2>Titre</h2>
+                <div class="flex justify-center gap32">
+                    <p>13/13/2013</p>
+                    <p>Auteur</p>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit esse repellendus veritatis, quaerat
+                    doloribus sit consequatur eos dolor totam facilis dolorem, maxime, laborum consequuntur ullam
+                    tempora eius minus quam iure!</p>
+                <a href="">Lire l'article</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<div class="carding">
+    <div class="large-12">
+        <img alt="" class="large-3" src="assets/curry1.jpg">
+    </div>
+    <div>
+        <h2>Placeholder</h2>
+        <div class="flex justify-center gap32">
+            <p>13/03/1978</p>
+            <p>Miaro</p>
+        </div>
+        <p>bonjour</p>
+        <a href="">Lire l'article</a>
+    </div>
+</div>
+
+
 <script defer src="script.js"></script>
 
 </body>
